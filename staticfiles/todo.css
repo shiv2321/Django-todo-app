@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.todo-form button {
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.todo-form button:hover {
+    background: #0056b3;
+}
+
+/* Task List */
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Individual Task Item */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eef2ff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    min-height: 50px;
+}
+
+.todo-item:hover {
+    background: #d6e4ff;
+}
+
+.todo-item h5 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin: 0;
+    flex: 1;
+    word-wrap: break-word;
+}
+
+/* Icons */
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons a {
+    color: #007BFF;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.icons a:hover {
+    color: #0056b3;
+}
+
+.icons .delete {
+    color: red;
+}
+
+.icons .delete:hover {
+    color: darkred;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
+/* Header Flexbox to Align Logout Button */
+/* Header Flexbox */
+.header {
+    display: flex;
+    justify-content: space-between; /* Pushes Logout to the right */
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+/* Logout Button */
+.logout {
+    background: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    right: 10px; /* Align to right */
+    top: 10px; /* Align to top */
+}
+
+.logout:hover {
+    background: #cc0000;
+}
